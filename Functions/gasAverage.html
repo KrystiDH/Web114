@@ -1,0 +1,82 @@
+<!-- Krysti Helton 11/14/25 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Week 6 - Calculate Average Weekly Gas</title>
+</head>
+    <script>
+        // variable username given by user 
+        const username = prompt("Enter your name");
+
+        let entryCount = 0;   // number of entries
+        let total = 0;        // total of amounts entered
+
+        // variable weeklyGas given by user (-1 to end) as float
+        let weeklyGas = parseFloat(
+            prompt("Enter your first weekly gas total, or -1 to end:")
+        );
+
+        // Step 3 – Function to calculate average gas total
+        function calcGasAvg() {
+
+            // While loop (user has NOT entered -1)
+            while (weeklyGas !== -1) {
+
+                // Add to running total
+                total += weeklyGas;
+
+                // Increase entry count
+                entryCount++;
+
+                // Prompt user again
+                weeklyGas = parseFloat(
+                    prompt("Enter next week's gas total, or -1 to end:")
+                );
+            }
+
+            // Compute average
+            let averageGas;
+
+            if (entryCount > 0) {
+                averageGas = total / entryCount;
+            } else {
+                averageGas = 0;
+            }
+
+            return averageGas;
+        }
+
+        // Step 4 – Call the function
+        const gas = calcGasAvg();
+
+        // Step 5 – Output the user's name and average
+        confirm(
+            username + "'s average weekly gas bill is " + gas.toFixed(2)
+        );
+
+        // Step 6 – Display number of entries
+        if (entryCount === 0) {
+            confirm("No gas totals were entered.");
+        } else if (entryCount === 1) {
+            confirm(`You entered ${entryCount} gas total.`);
+        } else {
+            confirm(`You entered ${entryCount} gas totals.`);
+        }
+    </script>
+<body>
+    <header>
+        <h1>Weekly Gas Average</h1>
+    </header>
+    <main>
+        <section>
+            <h3>What is the purpose of a function?</h3>
+            <p>
+                A function is used to group reusable blocks of code so that they can be
+                executed whenever needed without rewriting the logic each time.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
