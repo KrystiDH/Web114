@@ -1,0 +1,47 @@
+<!-- Krysti Helton 10/22/25 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Discount Calculator</title>
+</head>
+
+<body>
+    <h1>Project 3 – Shopping Discount Calculator</h1>
+        <h2>Name a situation where you would need to create an "if" statement.
+        </h2>
+            <p>Using if statements is essential for validating user input or checking correctivity.</p>
+        <h2>When comparing values, in what data type is the result stored?
+        </h2>
+            <p>When comparing values, the data type returned is a boolean value (true or false)</p>
+<!-- JavaScript starts here -->
+    <script>
+        // Step 1: Ask the customer for their shopping total
+        let total = prompt("What is your shopping total?");
+
+        // Convert input to a number (important for comparison)
+        total = Number(total);
+
+        // Step 2: Confirm the total with the customer
+        let confirmed = confirm("$" + total + " total? Click OK to continue.");
+
+        // Step 3–5: Check discount levels using if, else if, else
+        if (confirmed) {
+        // Step 3: Total >= 100 → 20% off
+        if (total >= 100) {
+            alert("20% off");
+        
+        // Step 4: Total >= 50 → 10% off
+        } else if (total >= 50) {
+            alert("10% off");
+        
+        // Step 5: Total < 50 → No discount
+        } else {
+            alert("No discount");
+        }
+    }
+    </script>
+
+</body>
+</html>
