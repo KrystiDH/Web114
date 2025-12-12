@@ -1,0 +1,71 @@
+/* Krysti Helton 12/6/25 */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #1E90FF;
+}
+
+h1 {
+    font-family: Chalkboard;
+    font-size: 50px;
+}
+
+#quizBox {
+    background: white;
+    padding: 5px;
+    width: 750px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+#questionImg {
+    width: 750px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.answerBtn {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 8px auto;
+    border: none;
+    border-radius: 5px;
+    background: #0099FF;
+    color: white;
+    cursor: pointer;
+}
+
+.answerBtn:hover {
+    background: #0066FF;
+}
+
+#startBtn {
+    margin-top: 15px;
+    padding: 10px 20px;
+}
+
+/* hides answer options prior to start of quiz */
+#answers {
+    display: none;
+}
+
+/* hides image prior to start of quiz */
+#questionImg {
+    display: none;
+}
+
+#questionImg[src="images/Question.jpg"] {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+#playerName {
+    margin-bottom: 20px;
+    width: 250px;
+    height: 30px;
+}
