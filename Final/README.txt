@@ -1,0 +1,1 @@
+I chose this project because it gave me the opportunity to make a website that I can use everyday. I am the scheduling manager for a Pest Control Company and I spend a lot of time training other team members how to schedule appointments correctly. I felt like this was a fun way for me to incorporate the new skills I am learning in class and apply it to what I do daily.
